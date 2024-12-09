@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raidel Enrique">
+    <meta name="description" content="Esta es mi primera web de calculadora">
+    <meta name="keywords" content="raidel, calculadora, web, primera, html, js, enrique">
+    <title>Calculadora</title>    
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <h1>Proyecto Calculadora</h1>
+    <h2>By "Raidel Enrique"</h2>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1" onclick="agregarAPantalla(`1`)">
+        <input type="button" value="2" onclick="agregarAPantalla(`2`)">
+        <input type="button" value="3" onclick="agregarAPantalla(`3`)">
+        <input type="button" value="+" onclick="agregarAPantalla(`+`)">
+        <br>
+        <input type="button" value="4" onclick="agregarAPantalla(`4`)">
+        <input type="button" value="5" onclick="agregarAPantalla(`5`)">
+        <input type="button" value="6" onclick="agregarAPantalla(`6`)">
+        <input type="button" value="-" onclick="agregarAPantalla(`-`)">
+        <br>
+        <input type="button" value="7" onclick="agregarAPantalla(`7`)">
+        <input type="button" value="8" onclick="agregarAPantalla(`8`)">
+        <input type="button" value="9" onclick="agregarAPantalla(`9`)">
+        <input type="button" value="*" onclick="agregarAPantalla(`*`)">
+        <br>
+        <input type="button" value="0" onclick="agregarAPantalla(`0`)">
+        <input type="button" value="." onclick="agregarAPantalla(`.`)">
+        <input type="button" value="/" onclick="agregarAPantalla(`/`)">
+        <input type="button" value="=" onclick="calcular()">
+        <br>
+        <input type="button"  value="C" onclick="borrar()">
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
